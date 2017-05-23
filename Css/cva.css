@@ -1,0 +1,22 @@
+body {
+background: url(https://s-media-cache-ak0.pinimg.com/originals/1b/5d/f9/1b5df9a6591acf906bb4637e96360d95.png);
+background-size: 100%;
+}
+
+.player {
+position: absolute;
+background-color: red;
+}
+
+#p1 {
+bottom: 0px;
+}
+
+#p2 {
+right: 0px;
+bottom: 0px;
+}
+
+.cow {
+width: 40%;
+}
