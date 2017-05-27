@@ -12,39 +12,32 @@ margin: 0 auto;
 position: relative;
 }
 
-/*.cow {
-width: 10%;
-position: absolute;
-bottom: 40px;
-}*/
-
-#player1 {
+.player {
     width: 100px;
     height: 100px;
-    border: 1px dotted;
     position: absolute;
+    bottom: 0;
 }
 
-.player-cow {
+#player1 {
+    left: 10px;
+}
+
+#player2 {
+    left: 850px;
+}
+
+.cow {
     background: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif) ;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-/*#player1 {
-left: 10px;
-}
-
-#player2 {
-left: 100px;
-}
-
 .human {
-position: absolute;
-bottom: 40px;
-width: 10%;
-visibility: hidden;
-}*/
+    background: url(https://68.media.tumblr.com/11fa430b485c23efb8f77fd4f0913de4/tumblr_o3carlAR0K1u9rrtbo1_500.png) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 .space-ship {
 left: 10px;
