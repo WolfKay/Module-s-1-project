@@ -1,22 +1,57 @@
 body {
+padding: 0;
+}
+
+.game-board {
 background: url(https://s-media-cache-ak0.pinimg.com/originals/1b/5d/f9/1b5df9a6591acf906bb4637e96360d95.png);
 background-size: 100%;
-}
-
-.player {
-position: absolute;
-background-color: red;
-}
-
-#p1 {
-bottom: 0px;
-}
-
-#p2 {
-right: 0px;
-bottom: 0px;
+background-repeat: no-repeat; 
+width: 960px;
+height: 600px;
+margin: 0 auto;
+position: relative;
 }
 
 .cow {
-width: 40%;
+width: 10%;
+position: absolute;
+bottom: 40px;
 }
+
+#player1-c {
+left: 10px;
+}
+
+#player2-c {
+left: 100px;
+}
+
+.human {
+position: absolute;
+bottom: 40px;
+width: 10%;
+}
+
+#player1-h {
+left: 10px;
+}
+
+#player2-h {
+left: 100px;
+}
+
+.space-ship {
+left: 10px;
+width: 20%;
+animation: 2s linear 0s infinite alternate hover;
+}
+
+@keyframes hover 
+{ from {
+    margin-left: 0%;
+    }
+    to {
+        margin-left: 80%;
+        }
+        }
+
