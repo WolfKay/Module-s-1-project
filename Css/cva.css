@@ -12,17 +12,30 @@ margin: 0 auto;
 position: relative;
 }
 
-.cow {
+/*.cow {
 width: 10%;
 position: absolute;
 bottom: 40px;
+}*/
+
+#player1 {
+    width: 100px;
+    height: 100px;
+    border: 1px dotted;
+    position: absolute;
 }
 
-#player1-c {
+.player-cow {
+    background: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*#player1 {
 left: 10px;
 }
 
-#player2-c {
+#player2 {
 left: 100px;
 }
 
@@ -30,15 +43,8 @@ left: 100px;
 position: absolute;
 bottom: 40px;
 width: 10%;
-}
-
-#player1-h {
-left: 10px;
-}
-
-#player2-h {
-left: 100px;
-}
+visibility: hidden;
+}*/
 
 .space-ship {
 left: 10px;
