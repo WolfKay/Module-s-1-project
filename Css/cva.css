@@ -26,9 +26,9 @@ bottom: 40px;
 }
 
 .player-cow {
-    background: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif);
-    max-width: 100%;
-    max-height: 100%;
+    background: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /*#player1 {
