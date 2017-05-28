@@ -13,6 +13,20 @@ margin: 0 auto;
 position: relative;
 }
 
+.welcome {
+   width: 350px;
+   height: 100px;
+   background-color: rgba(155, 155, 155, 0.6);
+   border: 2px solid white;
+   position: absolute;
+   margin: 200px 300px;
+   font-size: 14px;
+   color: #000;
+   padding: 40px 20px;
+   text-align: justify;
+
+}
+
 #p1-score {
     width: 130px;
     height: 40px;
