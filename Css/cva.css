@@ -24,7 +24,7 @@ position: relative;
    color: #000;
    padding: 40px 20px;
    text-align: justify;
-
+   visibility: hidden;
 }
 
 #p1-score {
