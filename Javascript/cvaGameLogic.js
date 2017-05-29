@@ -1,7 +1,7 @@
 var p1Score = 0;
-var score1 = ("#p1-score");
-score1.innerHTML= p1Score;
+$("#p1-score").html(p1Score);
 var p2Score = 0;
+$("#p2-score").html(p2Score);
 
 function CheckPosition() {
     this.shipSelector;
@@ -19,7 +19,7 @@ function CheckPosition() {
     CheckPosition.prototype.triangulatorP1 = function () {
         if (this.player1Position >= this.shipPosition - 200 && this.player1Position <= this.shipPosition + 200 && $("#player1").hasClass("cow")) {
             p1Score += 10;
-            // $("#p1-score").val();
+
         };
 
         if (this.player1Position >= this.shipPosition - 200 && this.player1Position <= this.shipPosition + 200 && $("#player1").hasClass("human")) {
@@ -31,11 +31,11 @@ function CheckPosition() {
     CheckPosition.prototype.triangulatorP2 = function () {
         if (this.player2Position >= this.shipPosition - 200 && this.player2Position <= this.shipPosition + 200 && $("#player2").hasClass("cow")) {
             p2Score += 10;
-            console.log(p2Score);
+
         }
         if (this.player2Position >= this.shipPosition - 200 && this.player2Position <= this.shipPosition + 200 && $("#player2").hasClass("human")) {
             p2Score -= 2;
-            console.log(p2Score);
+
         }
     };
 };
