@@ -1,13 +1,13 @@
+window.addEventListener("keypress", scorePlayer1, false);
 
-window.addEventListener("keypress", checkKeyPressed, false);
-
-function checkKeyPressed(e) {
+function scorePlayer1(e) {
     if (e.charCode === 97) {
-    var game = new CheckPosition();
-    game;
+        var game = new CheckPosition();
+        game.triangulatorP1();
     }
 
-        if (e.charCode === 32) {
-        alert("The 'Spacebar' is pressed.");
+    if (e.charCode === 32) {
+       var game = new CheckPosition();
+        game.triangulatorP2();
     }
 }
