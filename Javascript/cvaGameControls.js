@@ -5,7 +5,6 @@ window.addEventListener("keydown", function(e) {
             game.triangulatorP1();
             $("#p1-score").html(p1Score);
         } else if (e.keyCode === 38) {
-            debugger;
             game.triangulatorP2();
             $("#p2-score").html(p2Score);
         }
