@@ -55,7 +55,7 @@ position: relative;
 }
 
 #player1 {
-    left: 10px;
+    margin-left: 300px;
 }
 
 #player2 {

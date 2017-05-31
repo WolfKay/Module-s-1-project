@@ -13,16 +13,17 @@ function CheckPosition() {
     this.player2Selector = $("#player2").offset();
 
     this.shipPosition = this.shipSelector.left;
-    this.player1Position = this.player1Selector.left;
+    this.player1PositionY = this.player1Selector.left;
+
     this.player2Position = this.player2Selector.left;
 
     CheckPosition.prototype.triangulatorP1 = function () {
-        if (this.player1Position >= this.shipPosition - 100 && this.player1Position <= this.shipPosition + 100 && $("#player1").hasClass("cow")) {
+        if (this.player1PositionY >= this.shipPosition - 100 && this.player1PositionY <= this.shipPosition + 100 && $("#player1").hasClass("cow")) {
             p1Score += 10;
 
         };
 
-        if (this.player1Position >= this.shipPosition - 100 && this.player1Position <= this.shipPosition + 100 && $("#player1").hasClass("human")) {
+        if (this.player1PositionY >= this.shipPosition - 100 && this.player1PositionY <= this.shipPosition + 100 && $("#player1").hasClass("human")) {
             p1Score -= 2;
         }
     };
@@ -38,4 +39,15 @@ function CheckPosition() {
 
         }
     };
-};
+
+    CheckPosition.prototype.moveP1 = function (direction) {
+        this.direction = direction;
+        if (this.direction === "right") {
+            $("#player1").css("left", function(index) {
+                this.index = index;
+                this.value = this.index;
+                return (index) + 2;
+            });
+        }
+    }
+}
