@@ -12,4 +12,10 @@ window.addEventListener("keydown", function(e) {
         else if (e.keyCode === 68) {
             game.moveP1("right");
         }
+        else if (e.keyCode === 65) {
+            game.moveP1("left");
+        }
+        else if (e.keyCode === 65) {
+            game.moveP1("left");
+        }
 });
