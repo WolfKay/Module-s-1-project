@@ -15,7 +15,16 @@ window.addEventListener("keydown", function(e) {
         else if (e.keyCode === 65) {
             game.moveP1("left");
         }
-        else if (e.keyCode === 65) {
-            game.moveP1("left");
+        else if (e.keyCode === 39) {
+            game.moveP2("right");
+        }
+        else if (e.keyCode === 37) {
+            game.moveP2("left");
+        }
+        else if (e.keyCode === 32) {
+            $(".welcome").toggle();
         }
 });
+
+
+// añade un switch por dioooossss!!!!

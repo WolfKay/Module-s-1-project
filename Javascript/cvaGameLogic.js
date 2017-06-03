@@ -38,13 +38,41 @@ function CheckPosition() {
       p2Score -= 2;
     }
   };
+  // CheckPosition.prototype.Boundaries = function() {
+  //   document.getElementById("player1").style.left = document.getElementById("player1").offsetLeft;
+  //   var pos = document.getElementById("player1").style.left;
+  //   if (pos1 <= 960 || pos1 >= 0) {
+  //     console.log("You are out of boundaries");
+  //   }
+  // }
 
   CheckPosition.prototype.moveP1 = function (direction) {
-    if (direction === "right") {
-      document.getElementById("player1").style.left=document.getElementById("player1").offsetLeft + 100 + 'px';
+    if (direction === "right" && document.getElementById("player1").offsetLeft < 1100) {
+        document.getElementById("player1").style.left = document.getElementById("player1").offsetLeft + 100 + 'px';
     }
-    else if (direction === "left") {
-      document.getElementById("player1").style.left=document.getElementById("player1").offsetLeft - 100 + 'px';
+
+    else if (direction === "left" && document.getElementById("player1").offsetLeft > 50) {
+      document.getElementById("player1").style.left = document.getElementById("player1").offsetLeft - 100 + 'px';
     }
+};
+
+  CheckPosition.prototype.moveP2 = function (direction) {
+    if (direction === "right" && document.getElementById("player2").offsetLeft < 1100) {
+      document.getElementById("player2").style.left = document.getElementById("player2").offsetLeft + 100 + 'px';
+    }
+    else if (direction === "left" && document.getElementById("player2").offsetLeft > 50) {
+      document.getElementById("player2").style.left = document.getElementById("player2").offsetLeft - 100 + 'px';
+    }
+
 }
 };
+
+// añadir un top cuando llegue al borde del gameboard
+
+// *codigo eliminado de profe julio 
+// var step = direction === "right" ? 100 : -100;
+    // var position = document.getElementById("player1").offsetLeft + step + 'px';
+
+    // if (position <- 960) {
+    // document.getElementById("player1").style.left=position;
+    // }
