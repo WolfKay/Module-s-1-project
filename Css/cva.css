@@ -1,30 +1,57 @@
 body {
-padding: 0;
-font-family: Helvetica;
+    padding: 0;
+    font-family: Helvetica;
 }
 
 .game-board {
-background: url(https://s-media-cache-ak0.pinimg.com/originals/1b/5d/f9/1b5df9a6591acf906bb4637e96360d95.png);
-background-size: 100%;
-background-repeat: no-repeat; 
-width: 1260px;
-height: 786px;
-margin: 0 auto;
-position: relative;
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/1b/5d/f9/1b5df9a6591acf906bb4637e96360d95.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1260px;
+    height: 786px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .welcome {
-   width: 350px;
-   height: 100px;
-   background-color: rgba(155, 155, 155, 0.6);
-   border: 2px solid white;
-   position: absolute;
-   margin: 200px 300px;
-   font-size: 14px;
-   color: #000;
-   padding: 40px 20px;
-   text-align: justify;
-   visibility: show;
+    width: 350px;
+    height: 100px;
+    background-color: rgba(155, 155, 155, 0.6);
+    border: 2px solid white;
+    position: absolute;
+    margin: 200px 450px;
+    font-size: 14px;
+    color: #000;
+    padding: 40px 20px;
+    text-align: justify;
+    display: none;
+    z-index: 2;
+}
+
+.game-pause {
+    background-color: #000;
+    width: 1262px;
+    height: 786px;
+    margin: auto 12%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.winner-screen {
+    width: 350px;
+    height: 100px;
+    background-color: rgba(155, 155, 155, 0.6);
+    border: 2px solid white;
+    position: absolute;
+    margin: 200px 450px;
+    font-size: 14px;
+    color: #000;
+    padding: 40px 20px;
+    text-align: justify;
+    display: none;
+    z-index: 2;
+
 }
 
 #p1-score {
@@ -47,8 +74,16 @@ position: relative;
     background-color: rgba(155, 155, 155, 0.4);
     text-align: center;
     padding-top: 10px
-    
-    
+}
+
+#timer {
+    width: 200px;
+    height: 60px;
+    background-color: rgba(155, 155, 155, 0.4);
+    position: absolute;
+    left: 550px;
+    text-align: center;
+    padding-top: 10px
 }
 
 .player {
@@ -75,30 +110,29 @@ position: relative;
 }
 
 .cow {
-    background: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif) ;
+    background: url(http://oniongames.jp/onion_wp/wp-content/uploads/2014/03/cow_blog.gif);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .human {
-    background: url(https://68.media.tumblr.com/11fa430b485c23efb8f77fd4f0913de4/tumblr_o3carlAR0K1u9rrtbo1_500.png) ;
+    background: url(https://68.media.tumblr.com/11fa430b485c23efb8f77fd4f0913de4/tumblr_o3carlAR0K1u9rrtbo1_500.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .space-ship {
-position: absolute;
-top: 10%;
-width: 15%;
-animation: 2s linear 0s infinite alternate hover;
+    position: absolute;
+    top: 10%;
+    width: 15%;
+    animation: 2s linear 0s infinite alternate hover;
 }
 
-@keyframes hover 
-{ from {
-    margin-left: 0%;
+@keyframes hover {
+    from {
+        margin-left: 0%;
     }
     to {
         margin-left: 85%;
-        }
-        }
-
+    }
+}
