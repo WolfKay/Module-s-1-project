@@ -15,9 +15,20 @@ function startTimer(time) {
   
   if (time > 0) {
   	setTimeout(function() { startTimer(time) }, 1000);
-  } else if (){
-
+  } else if (time == 0 && p1Score > p2Score){
+    $(".winner-screen").text("Player 1 wins!");
+  	$(".winner-screen").toggle(); 
+  	$("#p1-score").toggle(); 
+  	$("#p2-score").toggle(); 
+    }
+   else if (time == 0 && p2Score > p1Score){
+       $(".winner-screen").text("Player 2 wins!");
+  	$(".winner-screen").toggle(); 
+  	$("#p1-score").toggle(); 
+  	$("#p2-score").toggle(); 
+    }
   }
-}
+  
+
 
 startTimer(6);

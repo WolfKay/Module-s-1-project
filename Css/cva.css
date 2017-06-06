@@ -51,6 +51,7 @@ body {
     text-align: justify;
     display: none;
     z-index: 2;
+    
 
 }
 
@@ -62,7 +63,8 @@ body {
     border: 1px solid #ff;
     background-color: rgba(155, 155, 155, 0.4);
     text-align: center;
-    padding-top: 10px
+    padding-top: 10px;
+    display: initial;
 }
 
 #p2-score {
@@ -73,7 +75,8 @@ body {
     border: 1px solid #ff;
     background-color: rgba(155, 155, 155, 0.4);
     text-align: center;
-    padding-top: 10px
+    padding-top: 10px;
+    display: initial;
 }
 
 #timer {
