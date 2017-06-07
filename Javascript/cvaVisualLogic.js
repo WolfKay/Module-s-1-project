@@ -31,4 +31,4 @@ function startTimer(time) {
   
 
 
-startTimer(6);
+startTimer(60);

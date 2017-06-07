@@ -22,6 +22,4 @@ window.addEventListener("keydown", function key (e) {
         $(".game-pause").toggle();
     }
 });
-
-
 // añade un switch por dioooossss!!!!

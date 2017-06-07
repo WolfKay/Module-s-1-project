@@ -13,28 +13,38 @@ function CheckPosition() {
   this.player2Selector = $("#player2").offset();
 
   this.shipPosition = this.shipSelector.left;
-  this.player1PositionY = this.player1Selector.left;
-
-  this.player2Position = this.player2Selector.left;
+  this.player1PositionX = this.player1Selector.left;
+  this.player2PositionX = this.player2Selector.left;
 
   CheckPosition.prototype.triangulatorP1 = function () {
-    if (this.player1PositionY >= this.shipPosition - 100 && this.player1PositionY <= this.shipPosition + 100 && $("#player1").hasClass("cow")) {
+    if (this.player1PositionX >= this.shipPosition - 100 && this.player1PositionX <= this.shipPosition + 100 && $("#player1").hasClass("cow")) {
       p1Score += 10;
-
+      $("#player1").animate({
+        bottom: "80"
+      }, 200);
+      $("#player1").animate({
+        bottom: "20"
+      }, 200);
     }
 
-    if (this.player1PositionY >= this.shipPosition - 100 && this.player1PositionY <= this.shipPosition + 100 && $("#player1").hasClass("human")) {
+    if (this.player1PositionX >= this.shipPosition - 100 && this.player1PositionX <= this.shipPosition + 100 && $("#player1").hasClass("human")) {
       p1Score -= 2;
     }
   };
 
 
   CheckPosition.prototype.triangulatorP2 = function () {
-    if (this.player2Position >= this.shipPosition - 100 && this.player2Position <= this.shipPosition + 100 && $("#player2").hasClass("cow")) {
+    if (this.player2PositionX >= this.shipPosition - 100 && this.player2PositionX <= this.shipPosition + 100 && $("#player2").hasClass("cow")) {
       p2Score += 10;
+      $("#player2").animate({
+        bottom: "80"
+      }, 200);
+      $("#player2").animate({
+        bottom: "20"
+      }, 200);
     }
 
-    if (this.player2Position >= this.shipPosition - 100 && this.player2Position <= this.shipPosition + 100 && $("#player2").hasClass("human")) {
+    if (this.player2PositionX >= this.shipPosition - 100 && this.player2PositionX <= this.shipPosition + 100 && $("#player2").hasClass("human")) {
       p2Score -= 2;
     }
   };
@@ -45,8 +55,8 @@ function CheckPosition() {
       document.getElementById("player1").style.left = document.getElementById("player1").offsetLeft + 100 + 'px';
     } else if (direction === "left" && document.getElementById("player1").offsetLeft > 50) {
       document.getElementById("player1").style.left = document.getElementById("player1").offsetLeft - 100 + 'px';
-    }
-  };
+  }
+  }
 
   CheckPosition.prototype.moveP2 = function (direction) {
     if (direction === "right" && document.getElementById("player2").offsetLeft < 1100) {
@@ -55,6 +65,6 @@ function CheckPosition() {
       document.getElementById("player2").style.left = document.getElementById("player2").offsetLeft - 100 + 'px';
     }
 
-  
   }
+  
 };
