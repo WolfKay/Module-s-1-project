@@ -1,4 +1,4 @@
-window.addEventListener("keydown", function key (e) {
+window.addEventListener("keydown", function key(e) {
     var game = new CheckPosition();
 
     if (e.keyCode === 87) {

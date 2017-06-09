@@ -20,12 +20,17 @@ function CheckPosition() {
     if (this.player1PositionX >= this.shipPosition - 100 && this.player1PositionX <= this.shipPosition + 100 && $("#player1").hasClass("cow")) {
       p1Score += 10;
       $("#player1").animate({
-        bottom: "80"
-      }, 200);
+        bottom: "200"
+      }, 300);
       $("#player1").animate({
         bottom: "20"
-      }, 200);
+      }, 300);
+      $("#lighting").show();
+      setTimeout(function() {$("#lighting").hide();
+    }, 500)
     }
+
+
 
     if (this.player1PositionX >= this.shipPosition - 100 && this.player1PositionX <= this.shipPosition + 100 && $("#player1").hasClass("human")) {
       p1Score -= 2;
@@ -37,11 +42,14 @@ function CheckPosition() {
     if (this.player2PositionX >= this.shipPosition - 100 && this.player2PositionX <= this.shipPosition + 100 && $("#player2").hasClass("cow")) {
       p2Score += 10;
       $("#player2").animate({
-        bottom: "80"
-      }, 200);
+        bottom: "200"
+      }, 300);
       $("#player2").animate({
         bottom: "20"
-      }, 200);
+      }, 300);
+        $("#lighting").show();
+      setTimeout(function() {$("#lighting").hide();
+    }, 500)
     }
 
     if (this.player2PositionX >= this.shipPosition - 100 && this.player2PositionX <= this.shipPosition + 100 && $("#player2").hasClass("human")) {
