@@ -48,4 +48,4 @@ function startTimer(time) {
 }
 
 
-startTimer(200);
+startTimer(40);
