@@ -11,20 +11,25 @@
 
 <body>
     <div class= "game-pause"></div>
+    <div class="play-again">Play again?</div>
     <div class= "winner-screen"></div>
     <div class="game-board">
-        <div class="welcome"> Aliens wan to abduct you!. Trick them and let them have cows instead! <br>
-            <strong>Press Spacebar to Start/Pause</strong>, Use <strong> W,A,S,D for player 1, and Arrow Keys for player 2, <br> Use "W" and "ArrowUp" </strong> to abduct them cows! GLHF.
+        <div class="welcome"> Aliens want to abduct you!, Let them take cows instead! <br> Be careful when you're human or you will get abducted!<br>
+            <strong> Player 1: W to ABDUCT, A and D to MOVE<br>Player 2: ARROP UP to ABDUCT, LEFT and RIGHT ARROWS to MOVE.</strong>TRUST ME, you don't want to get abducted GLHF!.
         </div>
         <div id="p1-score"></div>
+        <p class= "time">TIME</p>
         <div id="timer"></div>
         <div id="p2-score"> </div>
-
+        <div class="abduct">
         <img class="space-ship" src="https://68.media.tumblr.com/2dd43337fb22c2ecb8ee5d227f2d38f1/tumblr_nvcwk9Dxfp1ufxvfzo1_500.gif">
+        <div id="lighting"></div>
+        </div>
         <div id="player1" class="player cow">P1</div>
         <div id="player2" class="player human">P2</div>
     </div>
 </body>
+<link rel="stylesheet" href="./Css/stylesheet.css" type="text/css" charset="utf-8" /> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./Javascript/cvaVisualLogic.js"></script>
 <script type="text/javascript" src="./Javascript/cvaGameLogic.js"></script>

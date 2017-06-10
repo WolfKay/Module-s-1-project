@@ -1,4 +1,4 @@
-window.addEventListener("keydown", function key (e) {
+window.addEventListener("keydown", function key(e) {
     var game = new CheckPosition();
 
     if (e.keyCode === 87) {
@@ -10,6 +10,8 @@ window.addEventListener("keydown", function key (e) {
         $("#p2-score").html(p2Score);
     } else if (e.keyCode === 68) {
         game.moveP1("right");
+        var audio = new Audio('./musicAndFx/pickUp.wav');
+        audio.play();
 
     } else if (e.keyCode === 65) {
         game.moveP1("left");
@@ -22,6 +24,4 @@ window.addEventListener("keydown", function key (e) {
         $(".game-pause").toggle();
     }
 });
-
-
 // añade un switch por dioooossss!!!!
