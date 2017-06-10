@@ -10,6 +10,8 @@ window.addEventListener("keydown", function key(e) {
         $("#p2-score").html(p2Score);
     } else if (e.keyCode === 68) {
         game.moveP1("right");
+        var audio = new Audio('./musicAndFx/pickUp.wav');
+        audio.play();
 
     } else if (e.keyCode === 65) {
         game.moveP1("left");
